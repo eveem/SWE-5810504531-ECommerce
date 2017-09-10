@@ -8,11 +8,15 @@
         <ul class="navbar-nav mr-auto">
           {% url 'home' as home %}
           {% url 'about' as about %}
+          {% url 'contact' as contact %}
           <li {% if request.path == home %} class="active" {% endif %}>
             <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li {% if request.path == about %} class="active" {% endif %}>
             <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li {% if request.path == contact %} class="active" {% endif %}>
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
