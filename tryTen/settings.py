@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'checkout',
+    'stripe',
 ]
 
 MIDDLEWARE = [
@@ -179,3 +181,6 @@ ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_PASSWORD_INPUT_RENDER_VALUE = False
 ACCOUNT_PASSWORD_MIN_LENGTH = 6
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
+
+STRIPE_PUBLISHABLE_KEY = ''
+STRIPE_SECRET = ''
